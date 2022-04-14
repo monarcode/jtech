@@ -1,0 +1,57 @@
+.footer {
+  min-height: 600px;
+  position: relative;
+  display: grid;
+  z-index: 40;
+
+  &__shape {
+    &-dark {
+      background-color: #161718;
+      position: absolute;
+      inset: 0;
+      z-index: 40;
+      clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+    }
+    &-blue {
+      background-color: #0B249D;
+      position: absolute;
+      inset: 0;
+      z-index: 30;
+      clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+
+  &__content {
+    color: white;
+    margin-top: 180px;
+    z-index: 60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__cta {
+    background: #2043EF;
+    box-shadow: 0px 5px 0px #0D28AE;
+    border-radius: 320px;
+    color: white;
+    text-decoration: none;
+    padding: 1.8rem 4rem;
+    display: inline-block;
+  }
+
+  .copyright {
+    color: rgba(255, 255, 255, 0.47);
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}

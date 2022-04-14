@@ -1,0 +1,64 @@
+.contact {
+  min-height: 500px;
+  margin-top: 120px;
+
+  &__wrap {
+    padding: 5rem 0;
+  }
+
+  &__title {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &__content {
+    display: grid;
+    min-height: 500px;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  &__form {
+    margin-inline: auto;
+    margin-block: 3rem 0;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-block: 1rem;
+
+      label {
+        font-size: 1.2rem;
+      }
+
+      input,
+      textarea {
+        padding: 1.6rem 1rem;
+        border-radius: 8px;
+        border: none;
+        background: rgba(247, 243, 240, 0.5);
+        display: block;
+
+        &:focus {
+          outline: var(--main) 1px solid;
+        }
+      }
+
+      button {
+        padding: 1.6rem 4rem;
+        border-radius: 8px;
+        border: none;
+        background: var(--main);
+        color: #fff;
+        cursor: pointer;
+        align-self: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --main: #2043EF;
+  --dark: #161718;
+  --light: #F1F3FE;
+  --grey: #b2afac;
+
+  //    border radius
+  --base: 8px;
+  --md: 16px;
+}
+
+// spacer
+$spacer: 1rem;
+
+// breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
