@@ -3,17 +3,6 @@ $(document).ready(function () {
   let toggler = $("#navbar__toggler");
   let navbar = document.getElementById("navbar");
 
-  let splide = new Splide( '.splide', {
-    arrows: true,
-    perPage: 1,
-    breakpoints: {
-      768: {
-        arrows: false,
-      }
-    }
-  } );
-  splide.mount();
-
   $(document).scroll(() => {
     let scrollPosition = window.scrollY;
 
