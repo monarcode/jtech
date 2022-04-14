@@ -300,7 +300,7 @@ body {
   margin-bottom: 5rem;
 }
 .testimonials__item {
-  width: min(100%, 350px);
+  width: 500px;
   min-height: 200px;
   margin-inline: auto;
   background: #ffffff;
@@ -315,6 +315,11 @@ body {
 }
 .testimonials__item img {
   width: 60px;
+}
+@media screen and (max-width: 768px) {
+  .testimonials__item {
+    width: 100%;
+  }
 }
 
 .header.who {

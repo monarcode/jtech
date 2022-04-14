@@ -206,7 +206,7 @@
   }
 
   &__item {
-    width: min(100%, 350px);
+    width: 500px;
     min-height: 200px;
     margin-inline: auto;
     background: #ffffff;
@@ -222,6 +222,10 @@
 
     img {
       width: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
     }
   }
 }
