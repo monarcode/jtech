@@ -4,8 +4,13 @@ $(document).ready(function () {
   let navbar = document.getElementById("navbar");
 
   let splide = new Splide( '.splide', {
-    arrows: false,
-    perPage: 1
+    arrows: true,
+    perPage: 1,
+    breakpoints: {
+      768: {
+        arrows: false,
+      }
+    }
   } );
   splide.mount();
 
