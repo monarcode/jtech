@@ -26,4 +26,15 @@ $(document).ready(function () {
     this.classList.toggle("is-active");
     navbar.classList.toggle("active");
   });
+
+  let splide = new Splide( '.splide', {
+    arrows: true,
+    perPage: 1,
+    breakpoints: {
+      768: {
+        arrows: false,
+      }
+    }
+  } );
+  splide.mount();
 });
