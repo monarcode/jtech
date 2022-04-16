@@ -1,0 +1,176 @@
+.agent {
+  min-height: 500px;
+  margin-top: 120px;
+  display: grid;
+
+  &__header {
+    text-align: center;
+    padding-block: 4rem;
+    position: relative;
+    background: #f7f3f0;
+    min-height: 500px;
+    margin-bottom: 250px;
+
+    h1 {
+      margin-block: 1.6rem;
+    }
+
+    h1,
+    p {
+      width: 40%;
+      margin-inline: auto;
+    }
+
+    img {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      max-height: 500px;
+      display: block;
+    }
+  }
+
+  &__highlights {
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    margin: 3rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    &-card {
+      background: url(/assets/img/logo-water-mark.png) no-repeat bottom
+          left/100px,
+        linear-gradient(
+          127deg,
+          rgba(255, 102, 0, 0.2) 0%,
+          rgba(247, 243, 240, 0.4) 100%
+        );
+      border-radius: 12px;
+      min-height: 300px;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        width: 60px;
+        margin-bottom: 3rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+
+        &:nth-of-type(2) {
+          font-weight: bold;
+          //   display: none;
+        }
+      }
+
+      ul {
+        list-style-position: inside;
+        list-style: none;
+        margin-block: 2rem;
+        font-size: 1.3rem;
+      }
+
+      li {
+        margin-block: 1rem;
+        // padding-left: 30px;
+
+        &::before {
+          content: '\2756';
+          color: var(--main);
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__reg {
+    margin-block: 4rem;
+    width: 50%;
+
+    h1,
+    p {
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    form {
+      display: block;
+      width: 60%;
+      margin: 2rem auto;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      margin-block: 2rem;
+
+      label {
+        font-size: 1.3rem;
+        margin-block: 1rem;
+      }
+
+      input {
+        padding: 1.6rem;
+        background: rgba(247, 243, 240, 0.3);
+        border: 1px solid #f7f3f0;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        &:focus {
+          outline: none;
+          border: 1px solid var(--main);
+        }
+      }
+
+      button[type='submit'] {
+        background: var(--main);
+        color: #fff;
+        border: none;
+        padding: 1.6rem 4rem;
+        border-radius: 8px;
+        cursor: pointer;
+        align-self: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__header {
+      h1,
+      p {
+        width: 100%;
+      }
+
+      img {
+        all: unset;
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+      }
+    }
+
+    &__reg {
+      width: 90%;
+
+      form {
+        width: 100%;
+      }
+    }
+  }
+}
