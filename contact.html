@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>J-tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/style/main.css" />
+    <link rel="stylesheet" href="/assets/style/hamburgers.css" />
+</head>
+<body>
+<nav id="navbar" class="navbar">
+  <div class="container navbar__wrap">
+    <img src="/assets/img/logo.png" alt="logo" class="navbar__logo" />
+
+    <div id="navbar__toggler" class="hamburger hamburger--elastic">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+      </div>
+    </div>
+
+    <div class="navbar__links">
+      <a href="/" class="navbar__link">Home</a>
+      <a href="/about.html" class="navbar__link">Who we are</a>
+      <a href="/contact.html" class="navbar__link">Contact us</a>
+      <a href="/contact.html" class="navbar__link">Request service</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+    <div class="contact">
+        <div class="container contact__wrap">
+            <div class="contact__content">
+                <div class="contact__heading">
+                    <h2>Contact us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
+                </div>
+
+                <div class="info flex gap-4">
+                    <div>
+                        <h2>Address</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                    </div>
+
+                    <div>
+                        <h2>Contact Info</h2>
+                        <p>Support@officemail.com</p>
+                        <p>+2347847725478</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form">
+                <form>
+                    <div class="input__group">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="input__group">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="input__group">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="name" id="subject">
+                    </div>
+                    <div class="input__group">
+                        <label for="message">Message</label>
+                        <textarea rows="10" id="message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__shape-dark"></div>
+    <div class="footer__shape-blue"></div>
+    <div class="footer__content container flex flex-col gap-4">
+        <img src="/assets/img/logo-colored.png" class="footer__logo" alt="">
+        <a href="#" class="footer__cta">Get Started</a>
+        <div class="flex gap">
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Contact Us</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2020. J-TECH consulting. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="/assets/js/app.js">
+</script>
+<script>
+    $(document).ready(function () {
+        let navbar = document.getElementById("navbar");
+        $(navbar).addClass('contact-nav');
+    });
+</script>
+</body>
+</html>
